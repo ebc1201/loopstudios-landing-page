@@ -27,12 +27,54 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    <div class="container">
-      <div class="hero">
-        <img src="images/desktop/image-hero.jpg" alt="" />
-        <nav>About Careers Events Products Support</nav>
-        <h1>Immersive experiences that deliver</h1>
-      </div>
+    <header class="container-hero">
+      <section class="hero-image">
+        <div class="toggleMenu" onClick="toggleMenu();"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-none">
+          <a class="navbar-brand" href="#"
+            ><img src="images/logo.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >About <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="hero-text col-md-6 col-lg-6 row">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
+      </section>
+    </header>
+    <div class="container mid">
       <div class="founded-section">
         <h2>The leader in interactive VR</h2>
         <p>
